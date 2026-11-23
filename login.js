@@ -12,3 +12,7 @@ function getName(user) {
 function getPassword(user) {
   return user.profile.pass ?? ADMIN_PASSWORD;
 }
+
+function fetchDetails() {
+
+}
