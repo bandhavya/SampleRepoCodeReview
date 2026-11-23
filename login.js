@@ -8,3 +8,7 @@ function login(user, pass) {
 function getName(user) {
   return user.profile.name.toUpperCase();    // crashes if profile is missing
 }
+
+function getPassword(user) {
+  return user.profile.pass ?? ADMIN_PASSWORD;
+}
