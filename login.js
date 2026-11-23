@@ -18,5 +18,6 @@ function getPassword(user) {
 }
 
 function fetchDetails() {
+  fetch('https://randomuser.me/api/?results=5').then(r => r.json());
 
 }
