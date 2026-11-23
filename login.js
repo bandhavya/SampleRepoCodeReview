@@ -5,6 +5,10 @@ function login(user, pass) {
   return false;
 }
 
+function getAuthDetails() {
+  return user.isAuthenticated ? user.loggedInUser.name : user.profile.name;
+}
+
 function getName(user) {
   return user.profile.name.toUpperCase();    // crashes if profile is missing
 }
