@@ -1,4 +1,7 @@
+import { fetchDetails } from './login.js';
+
 const empData = [];
+
 
 function prepareData() {
     for (let i=0; i < 5; i++) {
@@ -7,3 +10,4 @@ function prepareData() {
     }
 }
 prepareData();
+fetchDetails();

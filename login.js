@@ -17,7 +17,6 @@ function getPassword(user) {
   return user.profile.pass ?? ADMIN_PASSWORD;
 }
 
-function fetchDetails() {
+export function fetchDetails() {
   fetch('https://randomuser.me/api/?results=5').then(r => r.json());
-
 }
